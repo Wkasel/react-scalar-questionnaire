@@ -2,9 +2,26 @@
   "name": "react-simple-questionnaire",
   "version": "1.0.0",
   "description": "A simple, lightweight, and flexible questionnaire for React.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
   },
   "repository": {
     "type": "git",
@@ -15,7 +32,10 @@
     "Questionnaire",
     "Survey"
   ],
-  "author": "William Kasel <@wkasel>",
+  "author": {
+    "name": "William Kasel",
+    "email": "wkasel@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Wkasel/react-simple-questionnaire/issues"
