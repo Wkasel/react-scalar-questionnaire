@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   entry: "./src/index.js",
   module: {
@@ -13,7 +15,7 @@ module.exports = {
     extensions: ["*", ".js", ".jsx"]
   },
   output: {
-    path: __dirname + "/build",
+    path: path.join(__dirname, "/../build"),
     publicPath: "/",
     filename: "index.js"
   },
